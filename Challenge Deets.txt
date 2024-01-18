@@ -1,0 +1,12 @@
+Challenge: Real-Time Weather Dashboard in Two hours
+
+Description:
+Create a real-time weather dashboard that fetches weather information for a user-specified location and displays it in a user-friendly format. The application should allow users to input the city or coordinates (latitude and longitude), and it should fetch and display real-time weather data, including temperature, humidity, wind speed, and a brief description of the weather condition.
+
+Requirements:
+
+Use a programming language of your choice.
+Utilize a weather API to fetch real-time data (e.g., OpenWeatherMap, Weatherstack).
+Display the fetched weather information in a clear and visually appealing way.
+Handle potential errors, such as invalid input or API request failures.
+Implement a user-friendly interface for input and output.

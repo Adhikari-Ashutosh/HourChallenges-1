@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.5.3/css/bootstrap.min.css">
+    <title>{{data['location']['name']}}</title>
+</head>
+<body>
+    <h1>Weather at {{data['location']['name']}}</h1>
+
+    <img href = "{{data['current']['condition']['icon']}}" />
+    <br>
+    Condition: {{data['current']['condition']['text']}}
+    <br>Temperature(Celsius): {{data['current']['temp_c']}}  &deg;C
+    <br>Wind Speed: {{data['current']['wind_kph']}}  KMpH
+    <br>Humidity: {{data['current']['humidity']}}  %
+    <br>Wind Direction: {{data['current']['wind_dir']}}  
+
+
+</body>
+</html>

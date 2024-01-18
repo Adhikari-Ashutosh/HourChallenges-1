@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/main.css')}}">
+  </head>
+  <body>
+    <div class="s01" style="background: url({{url_for('static', filename='images/Search_001.png')}})">
+      <form action="{{ url_for("print_results")}}" method="get">
+        <fieldset>
+          <legend>Weather App</legend>
+        </fieldset>
+        <div class="inner-form">
+          
+          <div class="input-field second-wrap">
+            <select name="loc" id = "citi">
+                {% for item in loc %}
+                <option value="{{ item }}">{{ item }}</option>
+                {% endfor %}
+              </select>
+          </div>
+          <div class="input-field third-wrap">
+            <button class="btn-search" type="submit" id="special-btn">Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
